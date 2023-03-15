@@ -1,0 +1,12 @@
+C:\Users\Roney\source\repos\api-rest-dotnet\Yenor\YenorApiModels\bin\Debug\net6.0\YenorApiModels.deps.json
+C:\Users\Roney\source\repos\api-rest-dotnet\Yenor\YenorApiModels\bin\Debug\net6.0\YenorApiModels.dll
+C:\Users\Roney\source\repos\api-rest-dotnet\Yenor\YenorApiModels\bin\Debug\net6.0\YenorApiModels.pdb
+C:\Users\Roney\source\repos\api-rest-dotnet\Yenor\YenorApiModels\obj\Debug\net6.0\YenorApiModels.csproj.AssemblyReference.cache
+C:\Users\Roney\source\repos\api-rest-dotnet\Yenor\YenorApiModels\obj\Debug\net6.0\YenorApiModels.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Roney\source\repos\api-rest-dotnet\Yenor\YenorApiModels\obj\Debug\net6.0\YenorApiModels.AssemblyInfoInputs.cache
+C:\Users\Roney\source\repos\api-rest-dotnet\Yenor\YenorApiModels\obj\Debug\net6.0\YenorApiModels.AssemblyInfo.cs
+C:\Users\Roney\source\repos\api-rest-dotnet\Yenor\YenorApiModels\obj\Debug\net6.0\YenorApiModels.csproj.CoreCompileInputs.cache
+C:\Users\Roney\source\repos\api-rest-dotnet\Yenor\YenorApiModels\obj\Debug\net6.0\YenorApiModels.dll
+C:\Users\Roney\source\repos\api-rest-dotnet\Yenor\YenorApiModels\obj\Debug\net6.0\refint\YenorApiModels.dll
+C:\Users\Roney\source\repos\api-rest-dotnet\Yenor\YenorApiModels\obj\Debug\net6.0\YenorApiModels.pdb
+C:\Users\Roney\source\repos\api-rest-dotnet\Yenor\YenorApiModels\obj\Debug\net6.0\ref\YenorApiModels.dll

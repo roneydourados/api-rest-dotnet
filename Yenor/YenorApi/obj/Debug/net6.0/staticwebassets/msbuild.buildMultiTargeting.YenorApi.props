@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\YenorApi.props" />
+</Project>
