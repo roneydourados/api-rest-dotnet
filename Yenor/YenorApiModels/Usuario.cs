@@ -1,13 +1,11 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
+﻿using Npgsql.Internal.TypeHandlers.DateTimeHandlers;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace YenorApiModels
 {
     [Table("users")]
-    public class Usuario
+    public class Usuario: BaseEntity
     {
-        [Column("id")]
-        public long Id { get; set; }
-
         [Column("name")] 
         public string? Name { get; set; }
         

@@ -1,48 +1,42 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using YenorApi.Contextos;
+﻿using YenorApi.Contextos;
 using YenorApiModels;
 
 namespace YenorApi.Repositorios.UsuarioRepository
 {
-    public class UsuarioRepository : IUsuarioRepository
+    public class UsuarioRepository : IRepository<Usuario>
     {
-        private readonly YenorApiDataBaseContext _db;
+        private readonly IRepository<Usuario> _db;
 
-        public UsuarioRepository(YenorApiDataBaseContext db)
+        public List<Usuario> GetAll()
         {
-            _db = db;
-        }
-
-        public List<Usuario> GetUsuarios()
-        {
-            return _db.Usuarios.OrderBy(a => a.Id).ToList();
+            return _db.GetAll();
         }
 
         public Usuario Get(int id)
         {
-            return _db.Usuarios.FirstOrDefault(a => a.Id == id)!;
+            return _db.Get(id)!;
         }
 
         public Usuario Create(Usuario usuario)
         {
-            _db.Usuarios.Add(usuario);
-            _db.SaveChanges();
+            usuario.CreatedAt = DateTime.UtcNow;   
+            usuario.UpdatedAt = DateTime.UtcNow;   
+
+            _db.Create(usuario);
 
             return usuario;
         }
 
         public void Delete(int id)
         {
-            _db.Usuarios.Remove(Get(id));
-            _db.SaveChanges();
+            _db.Delete(id);
         }
 
 
         public Usuario Update(Usuario usuario)
         {
-            _db.Usuarios.Update(usuario);
-            _db.SaveChanges();
+            usuario.UpdatedAt = DateTime.UtcNow;
+            _db.Update(usuario);
 
             return usuario;
         }

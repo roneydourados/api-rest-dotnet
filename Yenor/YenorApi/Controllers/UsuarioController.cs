@@ -8,9 +8,9 @@ namespace YenorApi.Controllers
     [ApiController]
     public class UsuarioController : ControllerBase
     {
-        private readonly IUsuarioRepository _usuarioRepository;
+        private readonly IRepository<Usuario> _usuarioRepository;
 
-        public UsuarioController(IUsuarioRepository repository)
+        public UsuarioController(IRepository<Usuario> repository)
         {
             _usuarioRepository = repository;
         }
@@ -18,7 +18,7 @@ namespace YenorApi.Controllers
         [HttpGet]
         public IActionResult Get()
         {
-            var listaUsuarios = _usuarioRepository.GetUsuarios();
+            var listaUsuarios = _usuarioRepository.GetAll();
 
             return Ok(listaUsuarios);
         }

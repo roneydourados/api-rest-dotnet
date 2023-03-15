@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using System.Text.Json.Serialization;
 using YenorApi.Contextos;
+using YenorApi.Repositorios.Generic;
 using YenorApi.Repositorios.UsuarioRepository;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -20,7 +21,9 @@ builder.Services.AddDbContext<YenorApiDataBaseContext>(
 );
 
 //adicionar os repositórios para que sejam chamados
-builder.Services.AddScoped<IUsuarioRepository, UsuarioRepository>();
+// builder.Services.AddScoped<IUsuarioRepository, UsuarioRepository>();
+//repositório genérico
+builder.Services.AddScoped(typeof(IRepository<>), typeof(GenericRepository<>));
 
 
 var app = builder.Build();
