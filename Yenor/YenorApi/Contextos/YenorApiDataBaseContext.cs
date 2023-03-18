@@ -11,13 +11,6 @@ namespace YenorApi.Contextos
 
         }
 
-        /*
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            optionsBuilder.EnableSensitiveDataLogging();
-        }
-        */
-
         public DbSet<Usuario> Usuarios { get; set; }
 
     }
