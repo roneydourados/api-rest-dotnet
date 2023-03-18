@@ -1,6 +1,4 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using System.Linq.Expressions;
+﻿using Microsoft.EntityFrameworkCore;
 using YenorApi.Contextos;
 using YenorApi.Repositorios.UsuarioRepository;
 using YenorApiModels;
@@ -9,50 +7,56 @@ namespace YenorApi.Repositorios.Generic
 {
     public class GenericRepository<T> : IRepository<T> where T : BaseEntity
     {
-        private readonly YenorApiDataBaseContext _db;
+        private readonly YenorApiDataBaseContext DbContext;
 
         //dataset genérico para pegar o tipo dinamicamente
-        private DbSet<T> dataset;
+        private readonly DbSet<T> DataSet;
 
         public GenericRepository(YenorApiDataBaseContext db)
         {
-            _db = db;
+            DbContext = db;
 
             //passar contexto do banco para dataset genérico
-            dataset = _db.Set<T>();
+            DataSet = DbContext.Set<T>();
         }
 
         public T Get(int id)
         {
-            return dataset.FirstOrDefault(a => a.Id == id)!;
+            return DataSet.FirstOrDefault(a => a.Id == id)!;
         }
         public List<T> GetAll()
         {
-            return dataset.OrderBy(a => a.Id).ToList();
+            return DataSet.OrderBy(a => a.Id).ToList();
         }
         public T Create(T item)
         {
             try
             {
-                dataset.Add(item);
-                _db.SaveChanges();
+                DataSet.Add(item);
+                DbContext.SaveChanges();
 
                 return item;
-            }catch (Exception) 
+            }
+            catch (Exception)
             {
                 throw;
             }
         }
         public T Update(T item)
         {
-            var itemExists = dataset.FirstOrDefault(p => p.Id == item.Id);
+            var itemExists = DataSet.FirstOrDefault(p => p.Id == item.Id);
 
             if (itemExists != null)
             {
                 try
-                {
-                    dataset.Update(item);
-                    _db.SaveChanges();
+                {  /* aqui é para limpar a instância que fica do exists 
+                    * se não colocar isso, ele da erro de duplicidade de instancias
+                    * do mesmo objeto que está sendo passdo
+                    */
+                    DbContext.Entry(itemExists).State = EntityState.Detached;
+
+                    DataSet.Update(item);
+                    DbContext.SaveChanges();
 
                     return item;
                 }
@@ -65,17 +69,18 @@ namespace YenorApi.Repositorios.Generic
             {
                 return null;
             }
+
         }
         public void Delete(int id)
         {
-            var item = dataset.FirstOrDefault(p => p.Id == id);
+            var item = DataSet.FirstOrDefault(p => p.Id == id);
 
             if (item != null)
             {
                 try
                 {
-                    dataset.Remove(item);
-                    _db.SaveChanges();
+                    DataSet.Remove(item);
+                    DbContext.SaveChanges();
                 }
                 catch (Exception)
                 {

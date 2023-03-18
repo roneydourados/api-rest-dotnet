@@ -1,4 +1,6 @@
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.ChangeTracking;
+using Microsoft.Extensions.Options;
 using System.Text.Json.Serialization;
 using YenorApi.Contextos;
 using YenorApi.Repositorios.Generic;
@@ -18,6 +20,7 @@ builder.Services.AddSwaggerGen();
 //configurações de conexão com banco de dados
 builder.Services.AddDbContext<YenorApiDataBaseContext>(
     options => options.UseNpgsql(builder.Configuration.GetConnectionString("YenorApi"))
+    
 );
 
 //adicionar os repositórios para que sejam chamados

@@ -32,7 +32,7 @@ namespace YenorApi.Controllers
         }
 
         [HttpPost]
-        public IActionResult Create([FromBody]Usuario usuario)
+        public IActionResult Create([FromBody] Usuario usuario)
         {
             _usuarioRepository.Create(usuario);
 

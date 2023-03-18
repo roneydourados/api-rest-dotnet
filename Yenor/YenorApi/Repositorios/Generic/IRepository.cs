@@ -9,6 +9,5 @@ namespace YenorApi.Repositorios.UsuarioRepository
         T Create(T item);
         T Update(T item);
         void Delete(int id);
-
     }
 }

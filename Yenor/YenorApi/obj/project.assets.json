@@ -10616,24 +10616,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Roney\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\roney\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Roney\\source\\repos\\api-rest-dotnet\\Yenor\\YenorApi\\YenorApi.csproj",
+      "projectUniqueName": "C:\\Dev\\C#\\api-rest-dotnet\\Yenor\\YenorApi\\YenorApi.csproj",
       "projectName": "YenorApi",
-      "projectPath": "C:\\Users\\Roney\\source\\repos\\api-rest-dotnet\\Yenor\\YenorApi\\YenorApi.csproj",
-      "packagesPath": "C:\\Users\\Roney\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Roney\\source\\repos\\api-rest-dotnet\\Yenor\\YenorApi\\obj\\",
+      "projectPath": "C:\\Dev\\C#\\api-rest-dotnet\\Yenor\\YenorApi\\YenorApi.csproj",
+      "packagesPath": "C:\\Users\\roney\\.nuget\\packages\\",
+      "outputPath": "C:\\Dev\\C#\\api-rest-dotnet\\Yenor\\YenorApi\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Roney\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\roney\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -10641,14 +10636,15 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {},
+        "https://pkgs.dev.azure.com/zdzcode/_packaging/ZDZCodeLibraries/nuget/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\Roney\\source\\repos\\api-rest-dotnet\\Yenor\\YenorApiModels\\YenorApiModels.csproj": {
-              "projectPath": "C:\\Users\\Roney\\source\\repos\\api-rest-dotnet\\Yenor\\YenorApiModels\\YenorApiModels.csproj"
+            "C:\\Dev\\C#\\api-rest-dotnet\\Yenor\\YenorApiModels\\YenorApiModels.csproj": {
+              "projectPath": "C:\\Dev\\C#\\api-rest-dotnet\\Yenor\\YenorApiModels\\YenorApiModels.csproj"
             }
           }
         }
