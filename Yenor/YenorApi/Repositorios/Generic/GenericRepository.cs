@@ -48,13 +48,14 @@ namespace YenorApi.Repositorios.Generic
 
             if (itemExists != null)
             {
-                try
-                {  /* aqui é para limpar a instância que fica do exists 
-                    * se não colocar isso, ele da erro de duplicidade de instancias
-                    * do mesmo objeto que está sendo passdo
-                    */
-                    DbContext.Entry(itemExists).State = EntityState.Detached;
+                /* aqui é para limpar a instância que fica do exists 
+                 * se não colocar isso, ele da erro de duplicidade de instancias
+                 * do mesmo objeto que está sendo passdo
+                */
+                DbContext.Entry(itemExists).State = EntityState.Detached;
 
+                try
+                {
                     DataSet.Update(item);
                     DbContext.SaveChanges();
 
