@@ -51,8 +51,9 @@ namespace YenorApi.Repositorios.Generic
                 /* aqui é para limpar a instância que fica do exists 
                  * se não colocar isso, ele da erro de duplicidade de instancias
                  * do mesmo objeto que está sendo passdo
+                 * Limpar o Tacker para não dar conflito
                 */
-                DbContext.Entry(itemExists).State = EntityState.Detached;
+                DbContext.ChangeTracker.Clear();
 
                 try
                 {

@@ -1,9 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "k1SYuILH5mvqVeDD6qAvjdjtWaBJzAWKSt5py8vHWLrfQZf1yBcbk9kmF6InGj+8WtDJMgTkQnkPYxx2uae02A==",
+  "dgSpecHash": "HB6+g94gYfdDmUMpOnmQCLCxrH17EVky6kY5jpWitKJyaToSskZSI+GwO6XkaAWymYvR1jADKL0ApjbBmVgvJA==",
   "success": true,
   "projectFilePath": "C:\\Dev\\C#\\api-rest-dotnet\\Yenor\\YenorApiModels\\YenorApiModels.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\roney\\.nuget\\packages\\libsodium\\1.0.18\\libsodium.1.0.18.nupkg.sha512",
+    "C:\\Users\\roney\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\6.0.2\\microsoft.aspnetcore.cryptography.internal.6.0.2.nupkg.sha512",
+    "C:\\Users\\roney\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\6.0.2\\microsoft.aspnetcore.cryptography.keyderivation.6.0.2.nupkg.sha512",
     "C:\\Users\\roney\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.4\\microsoft.entityframeworkcore.7.0.4.nupkg.sha512",
     "C:\\Users\\roney\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.4\\microsoft.entityframeworkcore.abstractions.7.0.4.nupkg.sha512",
     "C:\\Users\\roney\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\7.0.4\\microsoft.entityframeworkcore.analyzers.7.0.4.nupkg.sha512",
@@ -13,13 +16,19 @@
     "C:\\Users\\roney\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\7.0.0\\microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512",
     "C:\\Users\\roney\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\7.0.0\\microsoft.extensions.dependencyinjection.7.0.0.nupkg.sha512",
     "C:\\Users\\roney\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\roney\\.nuget\\packages\\microsoft.extensions.identity.core\\6.0.2\\microsoft.extensions.identity.core.6.0.2.nupkg.sha512",
     "C:\\Users\\roney\\.nuget\\packages\\microsoft.extensions.logging\\7.0.0\\microsoft.extensions.logging.7.0.0.nupkg.sha512",
     "C:\\Users\\roney\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\7.0.0\\microsoft.extensions.logging.abstractions.7.0.0.nupkg.sha512",
     "C:\\Users\\roney\\.nuget\\packages\\microsoft.extensions.options\\7.0.0\\microsoft.extensions.options.7.0.0.nupkg.sha512",
     "C:\\Users\\roney\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0\\microsoft.extensions.primitives.7.0.0.nupkg.sha512",
+    "C:\\Users\\roney\\.nuget\\packages\\microsoft.netcore.platforms\\1.0.1\\microsoft.netcore.platforms.1.0.1.nupkg.sha512",
+    "C:\\Users\\roney\\.nuget\\packages\\netdevpack.security.passwordhasher.argon2\\6.0.0\\netdevpack.security.passwordhasher.argon2.6.0.0.nupkg.sha512",
+    "C:\\Users\\roney\\.nuget\\packages\\netdevpack.security.passwordhasher.core\\6.0.0\\netdevpack.security.passwordhasher.core.6.0.0.nupkg.sha512",
     "C:\\Users\\roney\\.nuget\\packages\\npgsql\\7.0.2\\npgsql.7.0.2.nupkg.sha512",
     "C:\\Users\\roney\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\7.0.3\\npgsql.entityframeworkcore.postgresql.7.0.3.nupkg.sha512",
-    "C:\\Users\\roney\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+    "C:\\Users\\roney\\.nuget\\packages\\sodium.core\\1.2.3\\sodium.core.1.2.3.nupkg.sha512",
+    "C:\\Users\\roney\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "C:\\Users\\roney\\.nuget\\packages\\system.valuetuple\\4.5.0\\system.valuetuple.4.5.0.nupkg.sha512"
   ],
   "logs": []
 }

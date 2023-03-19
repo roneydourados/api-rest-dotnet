@@ -1,5 +1,5 @@
-﻿using Npgsql.Internal.TypeHandlers.DateTimeHandlers;
-using System.ComponentModel.DataAnnotations.Schema;
+﻿using System.ComponentModel.DataAnnotations.Schema;
+
 
 namespace YenorApiModels
 {
@@ -32,5 +32,5 @@ namespace YenorApiModels
 
         [Column("master_user")]
         public bool MasterUser { get; set; }
-    }
+   }
 }
